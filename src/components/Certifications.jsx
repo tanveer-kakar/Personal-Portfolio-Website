@@ -37,7 +37,7 @@ const certificationData = [
     id: 4,
     title: "Advanced Data Visualization",
     issuer: "Infosys Springboard",
-    date: "2024",
+    date: "August 15, 2024",
     tag: "2024",
     description: "Successfully completed the Advanced Data Visualization course, mastering tools and techniques to create compelling visual narratives and interactive dashboards.",
     image: "/cert-infosys.jpg",
@@ -47,7 +47,7 @@ const certificationData = [
     id: 5,
     title: "Python for Data Science",
     issuer: "Infosys Springboard",
-    date: "2024",
+    date: "March 10, 2024",
     tag: "2024",
     description: "Gained expertise in Python programming for data science applications, including data manipulation, statistical analysis, and implementing machine learning algorithms.",
     image: "/cert-infosys.jpg",
@@ -57,7 +57,7 @@ const certificationData = [
     id: 6,
     title: "Advanced SQL Database Management",
     issuer: "Infosys Springboard",
-    date: "2023",
+    date: "October 05, 2023",
     tag: "2023",
     description: "Developed advanced SQL querying skills, covering complex joins, subqueries, database optimization, and efficient data retrieval strategies for relational databases.",
     image: "/cert-infosys.jpg",
@@ -113,7 +113,7 @@ const CardItem = ({ item, isAward, onSelect }) => (
       <div className="pt-4 flex items-center justify-between text-[11px] font-bold tracking-wide">
         <div className="flex items-center gap-1.5 text-textSecondary">
           <Calendar size={14} />
-          <span>{item.date}</span>
+          <span>Date: {item.date}</span>
         </div>
         <button onClick={() => onSelect(item)} className="flex items-center gap-1.5 text-primary hover:brightness-125 font-bold tracking-wide transition-all uppercase">
           <span>{isAward ? 'VIEW AWARD' : 'VIEW'}</span>
