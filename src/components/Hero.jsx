@@ -21,10 +21,10 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-6xl md:text-[5.5rem] font-serif font-black mb-2 text-textPrimary tracking-tight">
+          <h1 className="text-5xl sm:text-6xl md:text-[5.5rem] font-serif font-black mb-2 text-textPrimary tracking-tight leading-tight">
             Tanveer Kakar
           </h1>
-          <h2 className="text-3xl md:text-4xl text-secondary mb-4 font-bold tracking-wide">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-secondary mb-4 font-bold tracking-wide">
             Data Analyst
           </h2>
           <p className="text-textSecondary mb-8 text-lg font-medium">
@@ -33,11 +33,11 @@ const Hero = () => {
           <p className="text-textPrimary/90 max-w-xl mx-auto md:mx-0 mb-10 leading-relaxed text-base pt-2">
             Passionate about transforming complex data into actionable insights. Experienced in data preprocessing, statistical analysis, and creating interactive dashboards using Python, SQL, and Power BI to drive business decisions.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8 relative">
-            <a href="#projects" onClick={(e) => handleScroll(e, 'projects')} className="bg-primary hover:bg-secondary text-[#050505] px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center shadow-[0_0_15px_rgba(0,208,156,0.3)]">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8 relative px-4 sm:px-0">
+            <a href="#projects" onClick={(e) => handleScroll(e, 'projects')} className="bg-primary hover:bg-secondary text-[#050505] px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center shadow-[0_0_15px_rgba(0,208,156,0.3)] w-full sm:w-auto">
               View My Work
             </a>
-            <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="bg-transparent border border-textPrimary/30 hover:border-primary hover:text-primary text-textPrimary px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center">
+            <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="bg-transparent border border-textPrimary/30 hover:border-primary hover:text-primary text-textPrimary px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center w-full sm:w-auto">
               Get In Touch
             </a>
           </div>

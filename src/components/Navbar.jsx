@@ -109,11 +109,12 @@ const Navbar = ({ viewState = 'home', onViewChange }) => {
       <div className="max-w-7xl mx-auto flex justify-between items-center w-full">
         <a href="#home" className="flex items-center group shrink-0">
           <span className="text-textSecondary text-xl font-light font-mono group-hover:text-primary transition-colors mr-1.5">&lt;</span>
-          <span className="font-signature text-[2rem] font-bold tracking-wide mt-1 text-textPrimary drop-shadow-[0_0_8px_rgba(255,255,255,0.1)] whitespace-nowrap">Tanveer Kakar</span>
+          <span className="font-signature text-2xl md:text-[2rem] font-bold tracking-wide mt-1 text-textPrimary drop-shadow-[0_0_8px_rgba(255,255,255,0.1)] whitespace-nowrap">Tanveer Kakar</span>
           <span className="text-textSecondary text-xl font-light font-mono group-hover:text-primary transition-colors ml-2">/&gt;</span>
         </a>
 
-        <div className="hidden lg:flex items-center space-x-3 xl:space-x-6">
+        <div className="flex items-center gap-3 sm:gap-4">
+          <div className="hidden lg:flex items-center space-x-3 xl:space-x-6">
           {/* Desktop Nav */}
           <nav className="flex space-x-1 xl:space-x-3 items-center">
             {mainLinks.map((link) => (
@@ -156,8 +157,9 @@ const Navbar = ({ viewState = 'home', onViewChange }) => {
               </div>
             </div>
           </nav>
+          </div>
 
-          <div className="flex items-center space-x-3 xl:space-x-5 border-l border-textPrimary/10 pl-3 xl:pl-5 shrink-0">
+          <div className="flex items-center space-x-3 xl:space-x-5 lg:border-l border-textPrimary/10 lg:pl-3 xl:pl-5 shrink-0">
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
@@ -176,21 +178,21 @@ const Navbar = ({ viewState = 'home', onViewChange }) => {
             <a
               href="/Tanveer_Kakar_Data_Analyst.pdf"
               download="Tanveer_Kakar_Data_Analyst.pdf"
-              className="bg-primary hover:bg-secondary text-[#050505] px-4 py-[0.45rem] rounded-full text-[13px] xl:text-sm font-bold transition-all flex items-center gap-1.5 shadow-[0_0_10px_rgba(0,208,156,0.3)] whitespace-nowrap shrink-0"
+              className="hidden lg:flex bg-primary hover:bg-secondary text-[#050505] px-4 py-[0.45rem] rounded-full text-[13px] xl:text-sm font-bold transition-all items-center gap-1.5 shadow-[0_0_10px_rgba(0,208,156,0.3)] whitespace-nowrap shrink-0"
             >
               <Download size={16} className="text-black" />
               Download Resume
             </a>
+
+            {/* Mobile Toggle */}
+            <button
+              className="lg:hidden text-textPrimary focus:outline-none"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
           </div>
         </div>
-
-        {/* Mobile Toggle */}
-        <button
-          className="md:hidden text-textPrimary focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
       </div>
 
       {/* Mobile Nav */}
@@ -215,6 +217,18 @@ const Navbar = ({ viewState = 'home', onViewChange }) => {
                 {link.name}
               </a>
             ))}
+            
+            {/* Mobile Download Resume */}
+            <div className="pt-2 mt-2 border-t border-textPrimary/10">
+              <a
+                href="/Tanveer_Kakar_Data_Analyst.pdf"
+                download="Tanveer_Kakar_Data_Analyst.pdf"
+                className="bg-primary hover:bg-secondary text-[#050505] px-4 py-3 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-[0_0_10px_rgba(0,208,156,0.3)] w-full"
+              >
+                <Download size={16} className="text-black" />
+                Download Resume
+              </a>
+            </div>
           </motion.nav>
         )}
       </AnimatePresence>

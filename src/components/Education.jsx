@@ -30,7 +30,7 @@ const educationDetails = [
 
 const Education = () => {
   return (
-    <section id="education" className="py-4 px-6 md:px-12 bg-card/30">
+    <section id="education" className="py-4 px-4 md:px-12 bg-card/30">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,7 +39,7 @@ const Education = () => {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <h2 className="text-4xl font-bold text-textPrimary mb-4 font-serif tracking-tight">Educational Qualifications</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-textPrimary mb-4 font-serif tracking-tight">Educational Qualifications</h2>
           <p className="text-textSecondary mb-6 max-w-2xl mx-auto text-[15px] font-medium">
             My academic journey that laid the foundation for my career in technology
           </p>

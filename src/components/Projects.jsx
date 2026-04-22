@@ -83,7 +83,7 @@ const Projects = ({ viewState = 'home', onViewChange }) => {
   const displayedProjects = viewState === 'home' ? projects.slice(0, 2) : projects;
 
   return (
-    <section id="projects" className="py-4 px-6 md:px-12 bg-dark">
+    <section id="projects" className="py-4 px-4 md:px-12 bg-dark">
       <div className="max-w-6xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -92,7 +92,7 @@ const Projects = ({ viewState = 'home', onViewChange }) => {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <h2 className="text-4xl font-bold text-textPrimary mb-4 font-serif tracking-tight">Featured Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-textPrimary mb-4 font-serif tracking-tight">Featured Projects</h2>
           <p className="text-textSecondary mb-6 max-w-2xl mx-auto text-[15px] font-medium">
             A showcase of my work in building scalable applications and digital solutions
           </p>

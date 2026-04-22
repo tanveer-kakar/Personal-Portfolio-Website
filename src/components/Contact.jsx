@@ -51,7 +51,7 @@ const Contact = () => {
 
   return (
     <>
-    <section id="contact" className="py-4 px-6 md:px-12 bg-dark">
+    <section id="contact" className="py-4 px-4 md:px-12 bg-dark">
       <div className="max-w-6xl mx-auto">
         
         {/* Header Title & Subtitle */}
@@ -62,7 +62,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="mb-20 text-center"
         >
-          <h2 className="text-4xl md:text-[40px] font-black text-textPrimary mb-4 font-serif tracking-tight">Contact Me</h2>
+          <h2 className="text-3xl md:text-[40px] font-black text-textPrimary mb-4 font-serif tracking-tight">Contact Me</h2>
           <p className="text-textSecondary mb-6 max-w-2xl mx-auto text-[15px] font-medium leading-relaxed">
             Let's connect and discuss opportunities, collaborations, or just have a conversation about technology
           </p>

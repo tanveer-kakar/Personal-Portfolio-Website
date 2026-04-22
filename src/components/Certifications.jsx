@@ -62,6 +62,16 @@ const certificationData = [
     description: "Developed advanced SQL querying skills, covering complex joins, subqueries, database optimization, and efficient data retrieval strategies for relational databases.",
     image: "/cert-infosys.jpg",
     link: "#"
+  },
+  {
+    id: 7,
+    title: "AWS Cloud Practitioner Essentials",
+    issuer: "AWS Training & Certification",
+    date: "April 22, 2026",
+    tag: "2026",
+    description: "Successfully completed the AWS Cloud Practitioner Essentials course, gaining a fundamental understanding of AWS Cloud concepts, services, security, architecture, pricing, and support.",
+    image: "/aws-cloud-practitioner.jpg",
+    link: "#"
   }
 ];
 
@@ -120,7 +130,7 @@ const Certifications = ({ viewState = 'home', onViewChange }) => {
   const displayedCerts = viewState === 'home' ? certificationData.slice(0, 3) : certificationData;
 
   return (
-    <section id="certifications" className="py-4 px-6 md:px-12">
+    <section id="certifications" className="py-4 px-4 md:px-12">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -129,7 +139,7 @@ const Certifications = ({ viewState = 'home', onViewChange }) => {
           viewport={{ once: true }}
           className="mb-20 text-center"
         >
-          <h2 className="text-4xl md:text-5xl font-black text-textPrimary mb-4 font-serif tracking-tight">Certifications</h2>
+          <h2 className="text-3xl md:text-5xl font-black text-textPrimary mb-4 font-serif tracking-tight">Certifications</h2>
           <p className="text-textSecondary mb-6 max-w-2xl mx-auto text-[15px]">
             Professional certifications highlighting expertise in data analytics and software development
           </p>

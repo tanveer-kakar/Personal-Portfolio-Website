@@ -36,7 +36,7 @@ const Footer = ({ viewState = 'home', onViewChange }) => {
   };
   return (
     <footer className="bg-card/30 pt-16 pb-8 border-t border-textPrimary/10 mt-auto">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand Info */}
           <div className="space-y-4">
