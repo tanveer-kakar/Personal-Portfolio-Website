@@ -10,10 +10,12 @@ const experiences = [
     duration: "11/2025 - Present",
     location: "Tamil Nadu, Karnataka",
     description: [
-      "Improved dataset accuracy by 20% through preprocessing with Python & Pandas.",
-      "Designed optimized SQL schemas, reducing report generation time by 15%.",
-      "Built interactive dashboards in Power BI to support business decisions.",
-      "Mentored 3 interns, ensuring timely and quality project delivery."
+      "Performed data analysis and basic analysis on clean datasets to support business decisions.",
+      "Used SQL queries and automation tools to improve reporting efficiency.",
+      "Developed dashboards for monitoring performance and business growth.",
+      "Created detailed written documentation and technical documentation for reports and workflows.",
+      "Delivered insights contributing to business growth and development.",
+      "Collaborated with teams to improve business processes and reporting flow."
     ],
     tech: ["Python", "Pandas", "SQL", "Power BI"]
   },
@@ -25,9 +27,11 @@ const experiences = [
     duration: "07/2024 - 08/2024",
     location: "Pune, Maharashtra",
     description: [
-      "Built and deployed 2 responsive websites within one month.",
-      "Received 100% positive client feedback for quality and timeliness.",
-      "Enhanced UI/UX, increasing site engagement by 25%."
+      "Supported application development and product growth initiatives.",
+      "Maintained clean and efficient code and documentation.",
+      "Used basic development and debugging techniques.",
+      "Worked with teams using strong collaboration and written communication.",
+      "Contributed to innovation and continuous improvement.",
     ],
     tech: ["HTML", "CSS", "JavaScript", "UI/UX"]
   }
