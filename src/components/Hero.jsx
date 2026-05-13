@@ -45,7 +45,7 @@ const Hero = () => {
           <div className="flex items-center justify-center md:justify-start gap-6 mt-6">
             <span className="text-textSecondary text-sm font-medium">Follow me:</span>
             <a href="https://linkedin.com/in/tanveer-kakar" target="_blank" rel="noopener noreferrer" className="text-textSecondary hover:text-textPrimary transition-colors"><FaLinkedin size={22} /></a>
-            <a href="https://github.com/Tanveer2507" target="_blank" rel="noopener noreferrer" className="text-textSecondary hover:text-textPrimary transition-colors"><FaGithub size={22} /></a>
+            <a href="https://github.com/tanveer-kakar" target="_blank" rel="noopener noreferrer" className="text-textSecondary hover:text-textPrimary transition-colors"><FaGithub size={22} /></a>
             <a href="https://x.com/tannu7774" target="_blank" rel="noopener noreferrer" className="text-textSecondary hover:text-textPrimary transition-colors"><FaTwitter size={22} /></a>
             <a href="https://www.instagram.com/mr_tannu_7774?igsh=MWVpazQwazAzOWMzaA==" target="_blank" rel="noopener noreferrer" className="text-textSecondary hover:text-textPrimary transition-colors"><FaInstagram size={22} /></a>
           </div>
